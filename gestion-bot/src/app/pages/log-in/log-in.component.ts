@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './log-in.component.css'
 })
 export class LogInComponent {
-
+ register:boolean = false
+  toggleToRegister(){
+    this.register=true
+  }
 }

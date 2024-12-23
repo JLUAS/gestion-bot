@@ -11,6 +11,12 @@ import { NavDashboardComponent } from './components/nav-dashboard/nav-dashboard.
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { InicioDashboardComponent } from './dashboard/inicio/inicio.component';
+import { PagosComponent } from './dashboard/pagos/pagos.component';
+import { InteraccionesComponent } from './dashboard/interacciones/interacciones.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +28,17 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     NavDashboardComponent,
     InicioComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    InicioDashboardComponent,
+    PagosComponent,
+    InteraccionesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

@@ -1,1 +1,11 @@
-<p>log-in works!</p>
+<app-nav-ws></app-nav-ws>
+<section class="w-1/4 flex flex-col h-fit mx-auto bg-red-400 rounded-md">
+  <div >
+    <app-sign-in *ngIf="!register"></app-sign-in>
+    <app-sign-up *ngif="register"></app-sign-up>
+  </div>
+  <div class="pb-4">
+    <p class="text-center cursor-pointer hover:underline" (click)="toggleToRegister()">O registrate aquí</p>
+  </div>
+</section>
+<app-footer></app-footer>
